@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="131dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        card_view:cardCornerRadius="4dp">
+
+        <!-- カードに載せる情報 -->
+
+        <RelativeLayout
+            android:id="@+id/cardRelative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/kaisyamei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="11dp"
+                android:layout_toEndOf="@+id/date"
+                android:text="株式会社ホーリー"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="26dp"
+                android:text="10"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/date"
+                android:layout_alignBottom="@+id/date"
+                android:layout_marginStart="1dp"
+                android:layout_marginBottom="-26dp"
+                android:text="Tue" />
+
+            <TextView
+                android:id="@+id/kaisi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/date"
+                android:layout_alignStart="@+id/kaisyamei"
+                android:layout_marginStart="2dp"
+                android:text="2018/11/1" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/kaisi"
+                android:layout_marginStart="2dp"
+                android:layout_toEndOf="@+id/kaisi"
+                android:text="ー" />
+
+            <TextView
+                android:id="@+id/owari"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView9"
+                android:layout_marginStart="1dp"
+                android:layout_toEndOf="@+id/textView9"
+                android:text="2018/11/10" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

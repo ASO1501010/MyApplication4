@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".calender_pop">
+
+    <RelativeLayout
+        android:id="@+id/time_popup_window"
+        android:layout_width="388dp"
+        android:layout_height="538dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="42dp">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="74dp"
+            android:layout_marginLeft="74dp"
+            android:layout_marginEnd="96dp"
+            android:layout_marginRight="96dp"
+            android:layout_marginBottom="398dp"
+            android:ems="10"
+            android:hint="会社名"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/touroku"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="49dp"
+            android:layout_marginRight="49dp"
+            android:layout_marginBottom="71dp"
+            android:background="@drawable/nagamaru"
+            android:text="登録"
+            android:textColor="#FFF" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="332dp"
+            android:layout_marginEnd="33dp"
+            android:layout_marginBottom="71dp"
+            android:layout_toStartOf="@+id/touroku"
+            android:background="@drawable/nagamaru"
+            android:text="戻る"
+            android:textColor="#FFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.702" />
+
+        <EditText
+            android:id="@+id/Kaisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/name"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="181dp"
+            android:ems="10"
+            android:hint="開始日(2018-10-1)"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/owari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/name"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="214dp"
+            android:ems="10"
+            android:hint="終了日(2018-10-10)"
+            android:inputType="textPersonName" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

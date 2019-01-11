@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.satokota.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera2.full" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon2"
+        android:roundIcon="@mipmap/icon2"
+        android:supportsRtl="true"
+        android:name="Bootstrap"
+        android:theme="@style/AppTheme">
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+        <activity
+            android:name=".title"
+            android:label="Look"
+            android:theme="@style/SplashTheme">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".test_card" />
+        <activity
+            android:name=".sub" />
+        <activity
+            android:name=".sign_up_student" />
+        <activity
+            android:name=".sikaku" />
+        <activity
+            android:name=".sikaku_card" />
+        <activity
+            android:name=".nittei" />
+        <activity android:name=".nittei_card" />
+        <activity
+            android:name=".calender" />
+        <activity android:name=".calender_pop" />
+        <activity android:name=".kizaru" />
+        <activity
+            android:name=".MainActivity" />
+        <activity
+            android:name=".sign_up_teacher" />
+        <activity
+            android:name=".login" />
+        <activity
+            android:name=".rireki" />
+        <activity
+            android:name=".rireki_edit" />
+        <activity
+            android:name=".touroku" />
+        <activity android:name=".maint"></activity>
+        <activity android:name=".RecogCamera" />
+    </application>
+
+</manifest>

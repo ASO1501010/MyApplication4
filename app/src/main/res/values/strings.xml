@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="button">Button</string>
+    <string name="button1">Button 1</string>
+    <string name="button2">Button 2</string>
+    <string name="BootstrapLabel">Bootstrap Label</string>
+    <string name="hint">Input text</string>
+    <string name="label1">Bootstrap</string>
+    <string name="label2">Label</string>
+    <string name="title_activity_calender">calender</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="picture">Picture</string>
+    <string name="description_info">Info</string>
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.satokota.myapplication.sub">
+
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:drawableLeft="@drawable/logout"
+        android:text="ログアウト"
+        android:textColor="#FFF"
+        android:textSize="13dp"
+        android:theme="@style/AppTheme.RaisedButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.831"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.728" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="氏名表示"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/carenda"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:drawableLeft="@drawable/calendar"
+        android:text="日程"
+        android:textColor="#FFF"
+        android:textSize="13dp"
+        android:theme="@style/AppTheme.RaisedButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/name"
+        app:layout_constraintVertical_bias="0.345" />
+
+    <Button
+        android:id="@+id/sikaku"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:drawableLeft="@drawable/qualification"
+        android:text="資格"
+        android:textColor="#FFF"
+        android:textSize="13dp"
+        android:theme="@style/AppTheme.RaisedButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.831"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.37" />
+
+    <!--<ImageView-->
+        <!--android:id="@+id/back"-->
+        <!--android:layout_width="49dp"-->
+        <!--android:layout_height="35dp"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="0.046"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:layout_constraintVertical_bias="0.029"-->
+        <!--app:srcCompat="@drawable/back" />-->
+
+    <Button
+        android:id="@+id/rireki"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:drawableLeft="@drawable/user"
+        android:text="履歴書"
+        android:textColor="#FFF"
+        android:textSize="13dp"
+        android:theme="@style/AppTheme.RaisedButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.728" />
+</android.support.constraint.ConstraintLayout>

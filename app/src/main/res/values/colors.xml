@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBack">#ffffff</color>
+
+    <!--一番上-->
+    <color name="custom1">#fff</color>
+    <!--タイトルのとこ-->
+    <color name="custom2">#8293ff</color>
+    <!--背景-->
+    <color name="custom3">#ffffd2</color>
+    <!--ボタン-->
+    <color name="custom4">#000</color>
+
+    <color name="buutomcolor">#BBFFFFFF</color>
+
+    <color name="control_background">#cc4285f4</color>
+</resources>
